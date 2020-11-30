@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import {
   AppBar,
   Box,
@@ -30,12 +29,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const App = ({ className, toggle, themeState, ...rest }) => {
+const App = ({ toggle, themeState }) => {
   const classes = useStyles();
   
   return (
-        <AppBar className={clsx(classes.root, className)}
-      {...rest}>
+        <AppBar className={classes.root}>
           <Toolbar className={classes.toolbar}>
             <Hidden lgUp>
               <IconButton color="inherit">

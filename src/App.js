@@ -5,6 +5,7 @@ import {
 import TopNav from './TopNav';
 import { createTheme } from './Theme';
 import Home from './Home';
+import { THEMES } from './constants';
 
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
 
 
   const toggle = () => {
-    const mode = themeState.mode === 'LIGHT' ? 'DARK' : 'LIGHT';
+    const mode = themeState.mode === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
     setThemeState({ ...themeState, mode: mode });
   };
 
