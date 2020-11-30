@@ -47,7 +47,7 @@ const themesOptions = [
 ];
 
 export const createTheme = (config = {}) => {
-    let themeOptions = themesOptions.find((theme) => theme.name === config.theme);
-    let theme = createMuiTheme(themeOptions);
+    const themeOptions = themesOptions.find((theme) => theme.name === config.theme);
+    const theme = createMuiTheme(themeOptions);
   return theme;
 };

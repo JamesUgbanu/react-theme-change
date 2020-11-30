@@ -29,13 +29,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const App = ({ toggle, themeState }) => {
+const TopNav  = ({ toggle, themeState }) => {
   const classes = useStyles();
   
   return (
         <AppBar className={classes.root}>
           <Toolbar className={classes.toolbar}>
-            <Hidden lgUp>
+            <Hidden lgUp>s
               <IconButton color="inherit">
                 <MenuIcon />
               </IconButton>
@@ -57,4 +57,4 @@ const App = ({ toggle, themeState }) => {
 };
 
 
-export default App;
+export default TopNav;
